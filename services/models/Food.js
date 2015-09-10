@@ -8,7 +8,7 @@ var foodSchema = new Schema({
 		lat: Number,
 		lng: Number,
 		name: String
-	}
+	},
 	image: String,
 	rating: Number
 });
