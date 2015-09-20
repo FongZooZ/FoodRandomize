@@ -6,13 +6,14 @@
 		<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
 		<script type="text/javascript" src="/javascripts/angular/NameController.js"></script>
 		<link rel='stylesheet' href='/stylesheets/style.css' />
 		<script type="text/javascript" src="/javascripts/misc.js"></script>
 	</head>
-	<body>
+	<body ng-controller="NameController as NameCtrl">
 		<ng-include src="'/partials/name/navbar.html'"></ng-include>
-
 		<!-- Start modal -->
 		<div class="modal fade" id="modal-addName" tabindex="-1" role="dialog" aria-labelledby="modal-addName-label">
 			<div class="modal-dialog" role="document">

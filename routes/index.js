@@ -15,7 +15,7 @@ router.delete('/api/food/:id', Homepage.deleteFood);
 // name displaying
 router.get('/nameDisplay', NamePage.getNamePage);
 
-router.post('/api//name', NamePage.addName);
+router.post('/api/name', NamePage.addName);
 router.get('/api/name/:id', NamePage.getNameById);
 router.get('/api/name', NamePage.getAllName);
 router.put('/api/name/:id', NamePage.editName);
