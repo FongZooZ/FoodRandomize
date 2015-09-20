@@ -2,7 +2,7 @@
 var FoodService = require('../services/FoodService');
 
 var getHomepage = function getHomepage (req, res) {
-	res.render('index', { title: 'Randomize' });
+	res.render('index', { title: 'Food Randomize' });
 }
 
 var addFood = function addFood(req, res, next) {

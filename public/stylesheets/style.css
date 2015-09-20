@@ -1,8 +1,16 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 10px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	/*padding-top: 100px;*/
+	padding-bottom: 0;
+	background: #333;
+	color: #aaa;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
+}
+
+.item {
+	background-color: #AAAAAA;
 }
