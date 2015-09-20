@@ -6,19 +6,19 @@ var	NamePage = require('../api/NamePage.js');
 /* GET home page. */
 router.get('/', Homepage.getHomepage);
 
-router.post('/food', Homepage.addFood);
-router.get('/food/:id', Homepage.getFoodById);
-router.get('/food', Homepage.getAllFood);
-router.put('/food/:id', Homepage.editFood);
-router.delete('/food/:id', Homepage.deleteFood);
+router.post('/api/food', Homepage.addFood);
+router.get('/api/food/:id', Homepage.getFoodById);
+router.get('/api/food', Homepage.getAllFood);
+router.put('/api/food/:id', Homepage.editFood);
+router.delete('/api/food/:id', Homepage.deleteFood);
 
 // name displaying
 router.get('/nameDisplay', NamePage.getNamePage);
 
-router.post('/nameDisplay/name', NamePage.addName);
-router.get('/nameDisplay/name/:id', NamePage.getNameById);
-router.get('/nameDisplay/name', NamePage.getAllName);
-router.put('/nameDisplay/name/:id', NamePage.editName);
-router.delete('/nameDisplay/name/:id', NamePage.deleteName);
+router.post('/api//name', NamePage.addName);
+router.get('/api/name/:id', NamePage.getNameById);
+router.get('/api/name', NamePage.getAllName);
+router.put('/api/name/:id', NamePage.editName);
+router.delete('/api/name/:id', NamePage.deleteName);
 
 module.exports = router;

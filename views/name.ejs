@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="name">
+	<head>
+		<title><%= title %></title>
+		<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="/javascripts/angular/NameController.js"></script>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<script type="text/javascript" src="/javascripts/misc.js"></script>
+	</head>
+	<body>
+		<ng-include src="'/partials/name/navbar.html'"></ng-include>
+
+		<!-- Start modal -->
+		<div class="modal fade" id="modal-addName" tabindex="-1" role="dialog" aria-labelledby="modal-addName-label">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="modal-addName-label">Add a name</h4>
+					</div>
+					<div class="modal-body">
+						<ng-include src="'/partials/name/addName.html'"></ng-include>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End modal -->
+	</body>
+</html>
