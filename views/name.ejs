@@ -12,7 +12,7 @@
 		<link rel='stylesheet' href='/stylesheets/style.css' />
 		<script type="text/javascript" src="/javascripts/misc.js"></script>
 	</head>
-	<body ng-controller="NameController as NameCtrl">
+	<body ng-controller="NameController as NameCtrl" data-ng-init="NameCtrl.init()">
 		<ng-include src="'/partials/name/navbar.html'"></ng-include>
 		<!-- Start modal -->
 		<div class="modal fade" id="modal-addName" tabindex="-1" role="dialog" aria-labelledby="modal-addName-label">
@@ -29,5 +29,6 @@
 			</div>
 		</div>
 		<!-- End modal -->
+		<div class="col-lg-2 col-md-3 col-sm-4" ng-repeat="name in NameCtrl.names">{{name.display}}</div>
 	</body>
 </html>
