@@ -6,9 +6,7 @@ angular.module('name', ['ngRoute'])
 			});
 		};
 		this.getAllName = function() {
-			return $http.get('/api/name').success(function(response) {
-
-			});
+			return $http.get('/api/name');
 		};
 	})
 	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
