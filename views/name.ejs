@@ -3,14 +3,7 @@
 	<head>
 		<title><%= title %></title>
 		<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
-		<script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>
-		<script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
-		<script type="text/javascript" src="/javascripts/angular/NameController.js"></script>
 		<link rel='stylesheet' href='/stylesheets/style.css' />
-		<script type="text/javascript" src="/javascripts/misc.js"></script>
 	</head>
 	<body ng-controller="NameController as NameCtrl" ng-init="NameCtrl.init()">
 		<ng-include src="'/partials/name/navbar.html'"></ng-include>
@@ -30,5 +23,13 @@
 		</div>
 		<!-- End modal -->
 		<div class="col-lg-2 col-md-3 col-sm-4" ng-repeat="name in NameCtrl.names">{{name.display}}</div>
+
+		<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>
+		<script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="/javascripts/angular/NameController.js"></script>
+		<script type="text/javascript" src="/javascripts/misc.js"></script>
 	</body>
 </html>
